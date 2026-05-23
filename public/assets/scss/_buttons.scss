@@ -1,0 +1,38 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-sm;
+  font-family: $font-family-ui;
+  font-size: $font-size-sm;
+  font-weight: 600;
+  line-height: 1;
+  padding: $spacing-sm $spacing-lg;
+  border-radius: $border-radius;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all $transition-base;
+  white-space: nowrap;
+
+  // Дефолтная кнопка — заливка
+  background-color: $color-primary;
+  color: $color-bg;
+  border-color: $color-primary;
+
+  &:hover {
+    background-color: $color-primary-dark;
+    border-color: $color-primary-dark;
+    color: $color-bg;
+  }
+
+  // Контурная кнопка
+  &--outline {
+    background-color: transparent;
+    color: $color-primary;
+    border-color: $color-primary;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-bg;
+    }
+  }
+}

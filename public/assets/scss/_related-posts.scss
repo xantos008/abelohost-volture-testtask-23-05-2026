@@ -1,0 +1,11 @@
+.related-posts {
+  max-width: 800px;
+  margin-inline: auto;
+  margin-top: $spacing-3xl;
+  padding-top: $spacing-2xl;
+  border-top: 2px solid $color-border;
+
+  &__title {
+    margin-bottom: $spacing-lg;
+  }
+}

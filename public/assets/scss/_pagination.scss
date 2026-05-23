@@ -1,0 +1,51 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-xs;
+  margin-top: $spacing-2xl;
+  font-family: $font-family-ui;
+
+  // Общие стили для кнопок и ссылок
+  &__btn,
+  &__page {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.25rem;
+    height: 2.25rem;
+    padding-inline: $spacing-sm;
+    border: 1px solid $color-border;
+    border-radius: $border-radius;
+    font-size: $font-size-sm;
+    font-weight: 500;
+    color: $color-text;
+    transition: all $transition-base;
+
+    &:hover {
+      border-color: $color-primary;
+      color: $color-primary;
+    }
+  }
+
+  // Активная страница
+  &__page--active {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: $color-bg;
+    cursor: default;
+
+    &:hover {
+      background-color: $color-primary;
+      border-color: $color-primary;
+      color: $color-bg;
+    }
+  }
+
+  // Неактивные кнопки prev/next
+  &__btn--disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}

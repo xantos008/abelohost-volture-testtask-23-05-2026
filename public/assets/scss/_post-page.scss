@@ -1,0 +1,102 @@
+.post-page {
+  max-width: 800px;
+  margin-inline: auto;
+
+  // ── Шапка ─────────────────────────────────────────────────────────────────
+  &__header {
+    margin-bottom: $spacing-xl;
+  }
+
+  &__title {
+    margin-bottom: $spacing-lg;
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+
+  &__categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+  }
+
+  &__stats {
+    display: flex;
+    align-items: center;
+    gap: $spacing-lg;
+    font-family: $font-family-ui;
+    font-size: $font-size-sm;
+    color: $color-text-muted;
+  }
+
+  // ── Обложка ───────────────────────────────────────────────────────────────
+  &__cover {
+    margin-bottom: $spacing-xl;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    box-shadow: $box-shadow-md;
+  }
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  // ── Лид ───────────────────────────────────────────────────────────────────
+  &__lead {
+    font-size: $font-size-lg;
+    color: $color-text-muted;
+    font-style: italic;
+    margin-bottom: $spacing-xl;
+    padding-left: $spacing-lg;
+    border-left: 3px solid $color-primary;
+  }
+
+  // ── Контент ───────────────────────────────────────────────────────────────
+  &__content {
+    // Типографика внутри статьи — HTML-контент от редактора
+    h2 {
+      margin-top: $spacing-2xl;
+      margin-bottom: $spacing-md;
+    }
+
+    p {
+      margin-bottom: $spacing-lg;
+    }
+
+    ul, ol {
+      margin-bottom: $spacing-lg;
+      padding-left: $spacing-xl;
+
+      li {
+        margin-bottom: $spacing-sm;
+        list-style: disc;
+      }
+    }
+
+    ol li {
+      list-style: decimal;
+    }
+  }
+
+  // ── Футер статьи ──────────────────────────────────────────────────────────
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+    flex-wrap: wrap;
+    margin-top: $spacing-2xl;
+    padding-top: $spacing-xl;
+    border-top: 2px solid $color-border;
+  }
+
+  &__back-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+  }
+}

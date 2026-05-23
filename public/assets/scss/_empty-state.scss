@@ -1,0 +1,28 @@
+.empty-state {
+  text-align: center;
+  padding: $spacing-3xl $spacing-lg;
+  color: $color-text-muted;
+  font-family: $font-family-ui;
+}
+
+.no-posts {
+  color: $color-text-muted;
+  font-style: italic;
+  font-size: $font-size-sm;
+  font-family: $font-family-ui;
+  margin-top: $spacing-md;
+}
+
+.error-page {
+  text-align: center;
+  padding: $spacing-3xl $spacing-lg;
+
+  h1 {
+    margin-bottom: $spacing-md;
+  }
+
+  p {
+    color: $color-text-muted;
+    margin-bottom: $spacing-xl;
+  }
+}

@@ -1,0 +1,39 @@
+// ── Цвета ─────────────────────────────────────────────────────────────────────
+$color-bg:           #ffffff;
+$color-bg-subtle:    #f8f9fa;
+$color-border:       #e9ecef;
+$color-text:         #212529;
+$color-text-muted:   #6c757d;
+$color-primary:      #2563eb;
+$color-primary-dark: #1d4ed8;
+$color-danger:       #dc2626;
+
+// ── Типографика ───────────────────────────────────────────────────────────────
+$font-family-base:   'Georgia', 'Times New Roman', serif;
+$font-family-ui:     system-ui, -apple-system, 'Segoe UI', sans-serif;
+$font-size-base:     1rem;       // 16px
+$font-size-sm:       0.875rem;   // 14px
+$font-size-lg:       1.125rem;   // 18px
+$line-height-base:   1.7;
+
+// ── Сетка и отступы ───────────────────────────────────────────────────────────
+$container-max-width: 1140px;
+$container-padding:   1.5rem;
+$spacing-xs:          0.25rem;
+$spacing-sm:          0.5rem;
+$spacing-md:          1rem;
+$spacing-lg:          1.5rem;
+$spacing-xl:          2rem;
+$spacing-2xl:         3rem;
+$spacing-3xl:         4rem;
+
+// ── Радиус и тени ─────────────────────────────────────────────────────────────
+$border-radius:       6px;
+$border-radius-lg:    12px;
+$box-shadow-sm:       0 1px 3px rgba(0, 0, 0, 0.08);
+$box-shadow-md:       0 4px 12px rgba(0, 0, 0, 0.10);
+$box-shadow-hover:    0 8px 24px rgba(0, 0, 0, 0.12);
+
+// ── Переходы ──────────────────────────────────────────────────────────────────
+$transition-base:     150ms ease;
+$transition-slow:     250ms ease;

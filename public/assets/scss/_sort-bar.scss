@@ -1,0 +1,40 @@
+.sort-bar {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  margin-bottom: $spacing-xl;
+  font-family: $font-family-ui;
+
+  &__label {
+    font-size: $font-size-sm;
+    color: $color-text-muted;
+    margin-right: $spacing-xs;
+  }
+
+  &__btn {
+    font-size: $font-size-sm;
+    font-weight: 500;
+    color: $color-text-muted;
+    padding: $spacing-xs $spacing-md;
+    border: 1px solid $color-border;
+    border-radius: $border-radius;
+    transition: all $transition-base;
+
+    &:hover {
+      border-color: $color-primary;
+      color: $color-primary;
+    }
+
+    &--active {
+      background-color: $color-primary;
+      border-color: $color-primary;
+      color: $color-bg;
+
+      &:hover {
+        background-color: $color-primary-dark;
+        border-color: $color-primary-dark;
+        color: $color-bg;
+      }
+    }
+  }
+}

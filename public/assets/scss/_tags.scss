@@ -1,0 +1,17 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-family: $font-family-ui;
+  font-size: $font-size-sm;
+  font-weight: 500;
+  color: $color-primary;
+  background-color: rgba($color-primary, 0.08);
+  padding: $spacing-xs $spacing-md;
+  border-radius: 100px;
+  transition: all $transition-base;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-bg;
+  }
+}

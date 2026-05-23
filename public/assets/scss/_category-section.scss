@@ -1,0 +1,61 @@
+.category-section {
+  margin-bottom: $spacing-3xl;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  // ── Шапка секции ──────────────────────────────────────────────────────────
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: $spacing-lg;
+    flex-wrap: wrap;
+    margin-bottom: $spacing-lg;
+    padding-bottom: $spacing-md;
+    border-bottom: 2px solid $color-border;
+  }
+
+  &__meta {
+    flex: 1;
+  }
+
+  &__title {
+    margin-bottom: $spacing-xs;
+
+    a {
+      color: $color-text;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__description {
+    color: $color-text-muted;
+    font-size: $font-size-sm;
+    margin: 0;
+  }
+}
+
+// ── Страница категории ────────────────────────────────────────────────────────
+.category-page {
+
+  &__header {
+    margin-bottom: $spacing-xl;
+    padding-bottom: $spacing-lg;
+    border-bottom: 2px solid $color-border;
+  }
+
+  &__title {
+    margin-bottom: $spacing-sm;
+  }
+
+  &__description {
+    color: $color-text-muted;
+    font-size: $font-size-lg;
+    margin: 0;
+  }
+}

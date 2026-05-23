@@ -1,0 +1,19 @@
+.site-footer {
+  background-color: $color-bg-subtle;
+  border-top: 1px solid $color-border;
+  padding-block: $spacing-lg;
+  margin-top: auto;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p {
+    font-family: $font-family-ui;
+    font-size: $font-size-sm;
+    color: $color-text-muted;
+    margin: 0;
+  }
+}

@@ -1,0 +1,44 @@
+.site-header {
+  background-color: $color-text;
+  color: $color-bg;
+  padding-block: $spacing-md;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: $box-shadow-md;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $spacing-md;
+  }
+}
+
+.site-logo {
+  font-family: $font-family-ui;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $color-bg;
+  letter-spacing: -0.02em;
+
+  &:hover {
+    color: lighten($color-primary, 20%);
+  }
+}
+
+.site-nav {
+  display: flex;
+  gap: $spacing-lg;
+
+  a {
+    font-family: $font-family-ui;
+    font-size: $font-size-sm;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color $transition-base;
+
+    &:hover {
+      color: $color-bg;
+    }
+  }
+}

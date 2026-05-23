@@ -1,0 +1,10 @@
+.idea
+/vendor/
+/.env
+/storage/cache/*
+/storage/compiled/*
+!storage/cache/.gitkeep
+!storage/compiled/.gitkeep
+*.log
+.DS_Store
+composer.lock

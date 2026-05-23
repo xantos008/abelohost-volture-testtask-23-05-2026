@@ -6,6 +6,7 @@ use App\Core\Env;
 use App\Core\Request;
 use App\Core\Response;
 use App\Core\Router;
+use App\Core\Database;
 use Smarty\Smarty;
 
 // ── 1. Автозагрузка ──────────────────────────────────────────────────────────
@@ -38,7 +39,12 @@ if ($config['debug']) {
     error_reporting(0);
 }
 
-// ── 7. Smarty ─────────────────────────────────────────────────────────────────
+// ── 7. База данных ───────────────────────────────────────────────────────────────
+// Инициализируем соединение один раз здесь.
+// Контроллеры получают его через Database::getInstance() без аргументов.
+Database::getInstance($dbConfig);
+
+// ── 8. Smarty ─────────────────────────────────────────────────────────────────
 $smarty = new Smarty();
 $smarty->setTemplateDir(dirname(__DIR__) . '/app/Views/');
 $smarty->setCompileDir(dirname(__DIR__) . '/storage/compiled/');
@@ -49,11 +55,11 @@ $smarty->setEscapeHtml(true);   // Автоэкранирование XSS — в
 // В реальном проекте это был бы DI, но по требованиям обходимся без него
 $GLOBALS['smarty'] = $smarty;
 
-// ── 8. Request / Router ───────────────────────────────────────────────────────
+// ── 9. Request / Router ───────────────────────────────────────────────────────
 $request = new Request();
 $router  = new Router();
 
 require dirname(__DIR__) . '/routes/web.php';
 
-// ── 9. Диспетчеризация ────────────────────────────────────────────────────────
+// ── 10. Диспетчеризация ────────────────────────────────────────────────────────
 $router->dispatch($request);

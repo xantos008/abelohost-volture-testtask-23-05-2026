@@ -31,6 +31,9 @@ make migrate
 
 # 5. Заполнить БД тестовыми данными
 make seed
+
+# 6. Собрать .css из .scss (optional)
+make scss
 ```
 
 Открыть в браузере: **http://localhost**

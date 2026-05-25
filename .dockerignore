@@ -1,0 +1,15 @@
+.git
+.gitignore
+
+node_modules
+vendor
+
+.env.*
+
+.idea
+.vscode
+
+coverage
+tests
+
+npm-debug.log

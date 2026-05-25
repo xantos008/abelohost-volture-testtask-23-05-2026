@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .empty-state {
   text-align: center;
   padding: $spacing-3xl $spacing-lg;
